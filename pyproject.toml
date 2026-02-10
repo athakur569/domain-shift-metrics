@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "domain-shift-metrics"
+version = "0.1.0"
+description = "MMD, Wasserstein, KL/JS divergence for covariate shift detection"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "Abhishek Thakur", email = "a.thakur5690@gmail.com"}]
+requires-python = ">=3.9"
+keywords = ["domain-shift", "covariate-shift", "mmd", "wasserstein", "computational-pathology"]
+dependencies = [
+    "numpy>=1.24.0",
+    "scipy>=1.10.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
